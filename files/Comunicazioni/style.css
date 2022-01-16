@@ -1,0 +1,199 @@
+.titolo{
+    font-family: "Arial";
+    text-align: center;
+    padding: 5px;
+    color: #c0f8f5;
+    text-shadow: 2px 2px 4px #01666b;
+}
+#home{
+font-family: "Arial";
+text-decoration: none;
+color: #fff;
+}
+#book{
+    font-family: "Arial";
+    margin-left: 5%;
+    text-decoration: none;
+    color: #fff;
+    }
+#comunication{
+    font-family: "Arial";
+    margin-left: 5%;
+    text-decoration: none;
+    color: #fff;
+    }
+#test{
+    font-family: "Arial";
+    margin-left: 5%;
+    text-decoration: none;
+    color: #fff;
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background: linear-gradient(#393e46,#222831) ;
+        
+    }
+    
+    .frame{
+        width: 50px;
+        height: 50px;
+    }
+    .bar{
+        color: #00adb5;
+        width: 50px;
+        height: 5px;
+        background: linear-gradient(#00fff5,#00adb5);
+        margin-bottom: 7px;
+        border-radius: 5px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    .menu{
+        display: flex;
+    }
+    
+    #tex{
+        color: #fff;
+        text-decoration: none;
+        padding-top: 5px;
+    }
+    #img{
+        padding-left: 20px;
+        padding-right: 3px;
+        padding-bottom: 5px;
+    }
+    #home{
+        padding-bottom: 5px;
+        display: flex;
+    }
+    .event{
+    display: none;
+    }
+    #pi{
+        display: flex;
+    }
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+    .frame {
+    
+      border-radius: 2px;
+      overflow: hidden;
+      
+      color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .center {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+        cursor: pointer;
+    }
+    
+    .bar {
+        background: linear-gradient(#00fff5,#00adb5);
+        width: 50px;
+        height: 7px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    }
+    
+    .bar + .bar {
+        margin-top: 10px;
+    }
+    
+    .active .bar:nth-child(1) {
+        animation: active1 1s forwards;
+    }
+    
+    .active .bar:nth-child(3) {
+        animation: active3 forwards 1s;
+    }
+    
+    .active .bar:nth-child(2) {
+        animation: active2 forwards 1s;
+    }
+    
+    .bar:nth-child(1) {
+        animation: active1-reverse 1s forwards;
+    }
+    .bar:nth-child(2) {
+        animation: active2-reverse 1s forwards;
+    }
+    .bar:nth-child(3) {
+        animation: active3-reverse 1s forwards;
+    }
+    
+    @keyframes active1 {
+        from {
+            transform: translateY(0)
+        }
+        50% {
+            transform: translateY(17px)
+        }
+        to {
+            transform: translateY(17px) rotate(45deg)
+        }
+    }
+    @keyframes active3 {
+        from {
+            transform: translateY(0)
+        }
+        50% {
+            transform: translateY(-17px)
+        }
+        to {
+            transform: translateY(-17px) rotate(-45deg)
+        }
+    }
+    @keyframes active2 {
+        from {
+            opacity: 1;
+        }
+        
+        to {
+            opacity: 0;
+        }
+    }
+    @keyframes active1-reverse {
+        from {
+            transform: translateY(17px) rotate(45deg)
+            
+        }
+        50% {
+            transform: translateY(17px) rotate(0deg)
+        }
+        to {
+            transform: translateY(0) rotate(0deg)
+        }
+    }
+    @keyframes active3-reverse {
+        from {
+            transform: translateY(-17px) rotate(-45deg)
+            
+        }
+        50% {
+            transform: translateY(-17px) rotate(0deg)
+        }
+        to {
+            transform: translateY(0) rotate(0deg)
+        }
+    }
+    @keyframes active2-reverse {
+        from {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
